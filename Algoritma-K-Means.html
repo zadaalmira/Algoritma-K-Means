@@ -2786,11 +2786,49 @@ Bisnis Muhammadiyah</h4>
 body{
 text-align: justify}
 </style>
-<div id="pengertian" class="section level1">
-<h1>PENGERTIAN</h1>
-<p>k-means merupakan algoritma yang menetapkan nilai-nilai cluster (k)
+<div id="pengertian-analisis-cluster" class="section level1">
+<h1>Pengertian Analisis Cluster</h1>
+<p>Clustering adalah sebuah proses untuk mengelompokan data ke dalam
+beberapa cluster atau kelompok sehingga data dalam satu cluster memiliki
+tingkat kemiripan yang maksimum dan data antar cluster memiliki
+kemiripan yang minimum.(Tan, 2006).Cluster-cluster yang terbentuk dalam
+satu cluster mempunyai ciri yang relatif sama (homogen), sedangkan antar
+cluster mempunyari ciri yang berbeda (heterogen). Pengelompokan ini
+dilakukan berdasarkan variabel-variabel yang diamati (Usman dan Sobari,
+2013).</p>
+</div>
+<div id="algoritma-k-means" class="section level1">
+<h1>Algoritma K-Means</h1>
+<p>K-means merupakan algoritma yang menetapkan nilai-nilai cluster (k)
 secara random, untuk sementara nilai tersebut menjadi pusat dari cluster
-yang biasa disebut centroid. Vulandari (2017:54)</p>
+yang biasa disebut centroid. (Vulandari,2017).Data-data yang dipilih
+menjadi beberapa kelompok dengan kriteria yang telah ditentukan lalu
+dikumpulkan menjadi satu dalam sebuah cluster,dimana setiap cluster ini
+memiliki centroid atau pusat.(Suntoro,2019).Definisi K-Means adalah
+suatu metode penganalisaan data atau metode Data Mining yang melakukan
+proses pemodelan tanpa supervisi(supervised)dan merupakan salah satu
+metode yang melakukan pengelompokan dengan sistem partisi.Kesimpulan
+makna dari K-means yaitu K-Means merupakan algoritma untuk cluster n
+objek berdasarkan atribut menjadi k partisi , dimana k&lt;n.Berikut ini
+tahapan dari algoritma K-Means:</p>
+<ol style="list-style-type: decimal">
+<li>Tentukan jumlah kelompok.</li>
+<li>Alokasikan data ke dalam kelompok secara acak.</li>
+<li>Hitung pusat kelompok(centroid/rata-rata) dari data yang ada di
+masing-masing kelompok.</li>
+<li>Alokasikan masing-masing data ke centroid/rata-rata terdekat.</li>
+<li>Kembali ke langkah 3,apabila masih ada yang berpindah kelompok ,
+atauu apabila ada perubahan nilai centroid di atas nilai ambang yang
+ditentukan , atau apabila perubahan nilai pada fungsi objektif yang
+digunakan masih diatas nilai ambang yang ditentukan.</li>
+</ol>
+</div>
+<div id="eksperimen-algoritma-k-means" class="section level1">
+<h1>Eksperimen Algoritma K-Means</h1>
+</div>
+<div id="read-data" class="section level1">
+<h1>Read Data</h1>
+<p>library(readr)</p>
 </div>
 
 

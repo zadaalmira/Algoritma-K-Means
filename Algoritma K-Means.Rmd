@@ -23,7 +23,35 @@ text-align: justify}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# PENGERTIAN
-K-means merupakan algoritma yang menetapkan nilai-nilai cluster (k) secara random, untuk sementara nilai tersebut menjadi pusat dari cluster yang biasa disebut centroid. Vulandari (2017:54).Algoritma K-Means merupakan algoritma pengelompokan data yang sederhana dan mudah diimplementasikan.Liao (2013)
+# Pengertian Analisis Cluster
+Clustering adalah sebuah proses untuk mengelompokan data ke dalam beberapa cluster atau kelompok sehingga data dalam satu cluster memiliki tingkat kemiripan yang maksimum dan data antar cluster memiliki kemiripan yang minimum.(Tan, 2006).Cluster-cluster yang terbentuk dalam
+satu cluster mempunyai ciri yang relatif sama (homogen), sedangkan antar cluster
+mempunyari ciri yang berbeda (heterogen). Pengelompokan ini dilakukan
+berdasarkan variabel-variabel yang diamati (Usman dan Sobari, 2013).
+
+
+
+# Algoritma K-Means
+
+K-means merupakan algoritma yang menetapkan nilai-nilai cluster (k) secara random, untuk sementara nilai tersebut menjadi pusat dari cluster yang biasa disebut centroid. (Vulandari,2017).Data-data yang dipilih menjadi beberapa kelompok dengan kriteria yang telah ditentukan lalu dikumpulkan menjadi satu dalam sebuah cluster,dimana setiap cluster ini memiliki centroid atau pusat.(Suntoro,2019).Definisi K-Means adalah suatu metode penganalisaan data atau metode Data Mining yang melakukan proses pemodelan tanpa supervisi(supervised)dan merupakan salah satu metode yang melakukan pengelompokan dengan sistem partisi.Kesimpulan makna dari K-means yaitu K-Means merupakan algoritma untuk cluster n objek berdasarkan atribut menjadi k partisi , dimana k<n.Berikut ini tahapan dari algoritma K-Means:
+
+1. Tentukan jumlah kelompok.
+2. Alokasikan data ke dalam kelompok secara acak.
+3. Hitung pusat kelompok(centroid/rata-rata) dari data      yang ada di masing-masing kelompok.
+4. Alokasikan masing-masing data ke centroid/rata-rata      terdekat.
+5. Kembali ke langkah 3,apabila masih ada yang berpindah kelompok , atauu apabila ada perubahan nilai centroid di atas nilai ambang yang ditentukan , atau apabila perubahan nilai pada fungsi objektif yang digunakan masih diatas nilai ambang yang ditentukan.
+
+
+
+# Eksperimen Algoritma K-Means
+
+
+# Read Data
+
+# library (readr)
+```{r}
+
+```
+
 
 
