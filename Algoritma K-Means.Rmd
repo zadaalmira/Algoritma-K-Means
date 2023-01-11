@@ -1,0 +1,29 @@
+---
+title: "Algoritma K-Means Dengan R"
+author: "Zada Almira Rahma-Institut Teknologi Statistika dan Bisnis Muhammadiyah"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: flatly
+    higlight: zenburn
+    toc: true
+    toc_float:
+      collapsed: true
+    df_print: paged
+bibliography: references.bib
+---
+
+```{=html}
+<style>
+body{
+text-align: justify}
+</style>
+```
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# PENGERTIAN
+K-means merupakan algoritma yang menetapkan nilai-nilai cluster (k) secara random, untuk sementara nilai tersebut menjadi pusat dari cluster yang biasa disebut centroid. Vulandari (2017:54).Algoritma K-Means merupakan algoritma pengelompokan data yang sederhana dan mudah diimplementasikan.Liao (2013)
+
+
