@@ -41,17 +41,40 @@ K-means merupakan algoritma yang menetapkan nilai-nilai cluster (k) secara rando
 4. Alokasikan masing-masing data ke centroid/rata-rata      terdekat.
 5. Kembali ke langkah 3,apabila masih ada yang berpindah kelompok , atauu apabila ada perubahan nilai centroid di atas nilai ambang yang ditentukan , atau apabila perubahan nilai pada fungsi objektif yang digunakan masih diatas nilai ambang yang ditentukan.
 
-
-
-# Eksperimen Algoritma K-Means
-
-
-# Read Data
-
-# library (readr)
+## LOad Package
 ```{r}
-
+library(tidyverse)
+library(cluster)
+library(factoextra)
 ```
+
+# Data Preparation
+
+Untuk melakukan analisis klaster dengan R, biasanya kriteria data yang harus dipersiapkan adalah sebagai berikut:
+
+1.Row atau baris sebagai nilai observasi, dan coloumn tau kolom sebagai variabel.
+
+
+2.Jika terdapat data missing harus di hilangkan terlebih dahulu.
+
+
+3.Data harus di standarisasi supaya satuan tiap variabel sama. Ketika nanti dilakukan profilisasi tiap klasternya data dikembalikan ke satuan semula.
+
+
+```{r}
+iris
+str(iris)
+```
+```{r}
+head(iris)
+```
+
+
+
+
+
+
+
 
 
 
