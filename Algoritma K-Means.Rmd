@@ -42,17 +42,21 @@ K-means merupakan algoritma yang menetapkan nilai-nilai cluster (k) secara rando
 5. Kembali ke langkah 3,apabila masih ada yang berpindah kelompok , atauu apabila ada perubahan nilai centroid di atas nilai ambang yang ditentukan , atau apabila perubahan nilai pada fungsi objektif yang digunakan masih diatas nilai ambang yang ditentukan.
 
 ## Eksperimen Algoritma K-Means
+
+
 ```{r}
 library(ggplot2)
 
-head(iris)
 str(iris)
-ggplot(iris, aes(Petal.Length, Petal.Width)) + geom_point(aes(col=Species), size=4)
+sep.l <- iris$Sepal.Length
+sep.w <- iris$Sepal.Width
+pet.l <- iris$Petal.Length
+pet.w <- iris$Petal.Width
+head(iris)
 
 ```
 
-
-# Melakukan K-Means Clustering
+## Melakukan K-Means Clustering
 
 ```{r}
 set.seed(100)
@@ -60,7 +64,7 @@ irisCluster <- kmeans(iris[,1:4], center=3, nstart=20)
 irisCluster
 ```
 
-# Mencari Nilai Ideal Untuk K
+## Mencari Nilai Ideal Untuk K
 
 ```{r}
 tot.withinss <- vector(mode="character", length=10)
@@ -69,6 +73,24 @@ for (i in 1:10){
   irisCluster <- kmeans(iris[,1:4], center=i, nstart=20)
   tot.withinss[i] <- irisCluster$tot.withinss
 }
+```
+
+
+
+## Menentukan banyaknya k
+
+
+### 1. Metode Elbow
+```{r}
+library(factoextra)
+fviz_nbclust(iris[1:4], kmeans, method='wss')
+```
+
+
+### 2. Metode Silhoutte
+
+```{r}
+fviz_nbclust(iris[1:4], kmeans, method='silhouette')
 ```
 
 # withinss untuk nilai k yang berbeda
@@ -95,3 +117,18 @@ clusplot(iris, irisCluster$cluster, color=T, shade=T, labels=0, lines=0)
 
 
 ```{r}
+plot(iris)
+```
+```{r}
+data.frame(iris)
+```
+
+
+
+# referensi
+
+
+1. https://rpubs.com/ahmadhusain/355692
+2. https://rpubs.com/MohAdityaSH/DataIris
+3. https://rpubs.com/pr2tik1/402745
+4. https://rpubs.com/widynur_/962167
