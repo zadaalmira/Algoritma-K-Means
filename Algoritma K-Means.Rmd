@@ -132,3 +132,4 @@ data.frame(iris)
 2. https://rpubs.com/MohAdityaSH/DataIris
 3. https://rpubs.com/pr2tik1/402745
 4. https://rpubs.com/widynur_/962167
+5. https://github.com/zadaalmira/Algoritma-K-Means.
